@@ -1,10 +1,10 @@
 
-console.log("%c¡Método endsWith():!",
+console.log("%c¡Método Replace()!",
             "background:linear-gradient(#000, #555); color:#fff; padding: 5px 10px;");
 
-let texto = "Puedes ver la letra O de ultimo";
+let texto = "La clave del exito esta en el ego";
 
-console.log("Indica si el dato se encuentra al final del string");
+console.log("devuelve una nueva cadena con algunas o todas las coincidencias de un patrón.");
 console.log(texto)
-console.log("console.log(texto.endsWith(o)")
-console.log(texto.endsWith("o"));
+console.log("console.log(texto.replace(ego, fracaso))")
+console.log(texto.replace("ego", "fracaso"));
