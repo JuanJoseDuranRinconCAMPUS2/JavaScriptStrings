@@ -2,9 +2,9 @@
 console.log("%c¡ Metodo .fromCharCode(n1, n2...)!",
             "background:linear-gradient(#000, #555); color:#fff; padding: 5px 10px;");
 
-let texto = "JuanFR";
+let texto = "ABC";
 
-console.log("El método codePointAt() devuelve un entero no negativo que equivale al valor Unicode code point del carácter. Un número que equivale al valor code point del carácter especificado en el índice de la cadena; devuelve undefined si no se encuentra carácter en la posición especifica.");
+console.log("El String.fromCharCode() método estático que devuelve una cadena creada mediante el uso de una secuencia de valores Unicode especificada.");
 console.log(texto)
-console.log("console.log(texto.fromCharCode(n1,))")
-console.log(texto.codePointAt(0));
+console.log("console.log(texto.fromCharCode(65,66,67))")
+console.log(texto.fromCharCode(65,66,67));
