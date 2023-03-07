@@ -1,10 +1,10 @@
 
-console.log("%c¡Método Replace()!",
+console.log("%c¡Método slice()!",
             "background:linear-gradient(#000, #555); color:#fff; padding: 5px 10px;");
 
-let texto = "La clave del exito esta en el ego";
+let texto = "Entonces la historia concluyo con un hermoso atardecer y un nuevo comienzo fruto de un final";
 
-console.log("devuelve una nueva cadena con algunas o todas las coincidencias de un patrón.");
+console.log("Extrae una sección de una cadena y devuelve una nueva cadena.");
 console.log(texto)
-console.log("console.log(texto.replace(ego, fracaso))")
-console.log(texto.replace("ego", "fracaso"));
+console.log("console.log(texto.slice(11, 55))")
+console.log(texto.slice(11, 55));
