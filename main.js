@@ -1,12 +1,33 @@
 
-console.log("%c¡ Metodo .raw()!",
-            "background:linear-gradient(#000, #555); color:#fff; padding: 5px 10px;");
+console.log("%c¡ Operadores Aritmeticos!",
+            "background:linear-gradient(#000, #FF8000); color:#fff; padding: 5px 10px;");
 
 
-var miCadena = "   hola mundo, ¿me escuchan?   ";
-let name = 'Pedro';
-
-console.log("El método estatico String.raw() es una función de plantilla de literales (en-US), similar al prefijo r en Python o al prefijo @ en C# para strings literales (con ciertas diferencias: ver la explicación en este problema). Se utiliza para obtener un string crudo a partir de plantillas de string (es decir, el original, texto no interpretado).");
-console.log(name)
-console.log("console.log(String.raw`Hi\n${name}!`)");
-console.log(String.raw`Hi\n${name}!`);
+console.log("%c¡Operadores Aritmeticos Estandars!",
+           "background:linear-gradient(#000, #555); color:#D4AF37; padding: 5px 10px;");
+num1= prompt("ingresa el numero1"   )
+num2= prompt("ingresa el numero2"   )
+console.log("%c¡Suma!",
+"background:linear-gradient(#000, #555); color:#D4AF37; padding: 5px 10px;")
+console.log("Se encarga de sumar dos variables")
+console.log("Ejemplo")
+console.log("console.log(parseInt(num1) + parseInt(num2))")
+console.log(parseInt(num1) + parseInt(num2))
+console.log("%c¡Resta!",
+"background:linear-gradient(#000, #555); color:#D4AF37; padding: 5px 10px;")
+console.log("Se encarga de restar dos variables")
+console.log("Ejemplo")
+console.log("console.log(parseInt(num1) - parseInt(num2))")
+console.log(parseInt(num1) - parseInt(num2))
+console.log("%c¡Multiplicacion!",
+"background:linear-gradient(#000, #555); color:#D4AF37; padding: 5px 10px;")
+console.log("Se encarga de multiplicar dos variables")
+console.log("Ejemplo")
+console.log("console.log(parseInt(num1) * parseInt(num2))")
+console.log(parseInt(num1) * parseInt(num2))
+console.log("%c¡Division!",
+"background:linear-gradient(#000, #555); color:#D4AF37; padding: 5px 10px;")
+console.log("Se encarga de dividir dos variables")
+console.log("Ejemplo")
+console.log("console.log(parseInt(num1) / parseInt(num2))")
+console.log(parseInt(num1) / parseInt(num2))
