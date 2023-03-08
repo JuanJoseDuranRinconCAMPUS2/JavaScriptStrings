@@ -1,12 +1,11 @@
 
-console.log("%c¡ Metodo .concat(str1, str2...)!",
+console.log("%c¡ Metodo .indexOf(str, from)!",
             "background:linear-gradient(#000, #555); color:#fff; padding: 5px 10px;");
 
-let texto = "Una combinacion";
-let texto2 = "De textos";
+let texto = "Alabado javascript";
 
-console.log("El método concat() combina dos o más cadenas de texto y devuelve una cadena de texto nueva.");
+
+console.log("El método indexOf() devuelve el índice, dentro del objeto String que realiza la llamada, de la primera ocurrencia del valor especificado, comenzando la búsqueda desde indiceDesde; o -1 si no se encuentra dicho valor.");
 console.log(texto);
-console.log(texto2);
-console.log("console.log(texto.concat(texto, texto2))");
-console.log(texto.concat(texto, texto2));
+console.log("console.log(texto.indexOf(javascript))");
+console.log(texto.indexOf("javascript"));
