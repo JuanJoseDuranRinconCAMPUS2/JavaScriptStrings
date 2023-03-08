@@ -1,12 +1,11 @@
 
-console.log("%c¡ Metodo .split(sep|regex, limit)!",
+console.log("%c¡ Metodo .toLowerCase()!",
             "background:linear-gradient(#000, #555); color:#fff; padding: 5px 10px;");
 
 
-var miCadena = "Hola Mundo. Cómo estás hoy?";
-var divisiones = miCadena.split(" ", 3);
-                   
-console.log("El método split() divide un objeto de tipo String en un array (vector) de cadenas mediante la separación de la cadena en subcadenas.");
+var miCadena = "HOLA MUNDO, ESTOY GRITANDO";
+
+console.log("El método toLowerCase() devuelve el valor en minúsculas de la cadena que realiza la llamada.");
 console.log(miCadena)
-console.log("console.log(texto.split(  , 3))");
-console.log(divisiones);
+console.log("console.log(miCadena.toLocaleLowerCase())");
+console.log(miCadena.toLocaleLowerCase());
