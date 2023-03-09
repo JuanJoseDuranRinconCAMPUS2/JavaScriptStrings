@@ -1,13 +1,14 @@
-
-console.log("%c¡ Operadores lógicos!",
+console.log("%c¡ Operadores Aritmeticos!",
             "background:linear-gradient(#000, #FF8000); color:#fff; padding: 5px 10px;");
-x = prompt("Ingresa un numero    ");
-console.log("%c¡Valores booleanos (lógicos)!",
+num1 = parseInt(prompt("Ingresa un numero    "));
+num2 = parseInt(prompt("Ingresa segundo numero    "));
+num3 = parseInt(prompt("Ingresa tercer numero    "));
+
+
+console.log("%c¡Operadores Aritmeticos de JavaScript Math!",
            "background:linear-gradient(#000, #555); color:#D4AF37; padding: 5px 10px;");
-console.log("%c¡NOT lógico (!)!",
+console.log("%c¡Math.max()!",
 "background:linear-gradient(#000, #555); color:#D4AF37; padding: 5px 10px;");
-console.log("Devuelve false si su único operando se puede convertir a true; de lo contrario, devuelve true.");
-
-console.log(" x = !true");
-
-console.log(x = !true)
+console.log("La función Math.max() retorna el mayor de cero o más números dados como parámetros de entrada, o NaN si cualquier parámetro no es un número y no puede ser convertido en uno.");
+console.log("console.log(Math.max(num1, num2 , num3))");
+console.log(Math.max(num1, num2 , num3));
