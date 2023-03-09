@@ -3,12 +3,10 @@ console.log("%c¡ Operadores Aritmeticos!",
             "background:linear-gradient(#000, #FF8000); color:#fff; padding: 5px 10px;");
 
 
-console.log("%c¡Operadores Aritmeticos de JavaScript!",
+console.log("%c¡Operadores Aritmeticos de JavaScript Math!",
            "background:linear-gradient(#000, #555); color:#D4AF37; padding: 5px 10px;");
-num1= prompt("ingresa el numero1"   )
-num2= prompt("ingresa el numero2"   )
-console.log("%c¡Operador de exponenciación (**)!",
+console.log("%c¡Math.E!",
 "background:linear-gradient(#000, #555); color:#D4AF37; padding: 5px 10px;");
-console.log("Calcula la base a la potencia de exponente, es decir, baseexponente");
-console.log("console.log(num1  ** num2)");
-console.log(num1 ** num2);
+console.log("Constante de Euler, la base de los logaritmos naturales, aproximadamente 2.718.");
+console.log("console.log(Math.E)");
+console.log(Math.E);
