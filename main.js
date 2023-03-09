@@ -7,8 +7,8 @@ num3 = parseInt(prompt("Ingresa tercer numero    "));
 
 console.log("%c¡Operadores Aritmeticos de JavaScript Math!",
            "background:linear-gradient(#000, #555); color:#D4AF37; padding: 5px 10px;");
-console.log("%c¡Math.max()!",
+console.log("%c¡Math.min()!",
 "background:linear-gradient(#000, #555); color:#D4AF37; padding: 5px 10px;");
-console.log("La función Math.max() retorna el mayor de cero o más números dados como parámetros de entrada, o NaN si cualquier parámetro no es un número y no puede ser convertido en uno.");
-console.log("console.log(Math.max(num1, num2 , num3))");
-console.log(Math.max(num1, num2 , num3));
+console.log("La función Math.min() devuelve el menor de cero o más números.");
+console.log("console.log(Math.min(num1, num2 , num3))");
+console.log(Math.min(num1, num2 , num3));
