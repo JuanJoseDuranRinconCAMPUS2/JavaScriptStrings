@@ -5,8 +5,8 @@ x = parseInt(prompt("Ingresa un numero    "));
 
 console.log("%c¡True Or False!",
            "background:linear-gradient(#000, #555); color:#D4AF37; padding: 5px 10px;");
-console.log("%c¡No es igual (!=)!",
+console.log("%c¡Estrictamente igual (===)!",
 "background:linear-gradient(#000, #555); color:#D4AF37; padding: 5px 10px;");
-console.log("Devuelve true si los operandos no son iguales.");
-console.log("console.log(5 != x)");
-console.log(5 != x);
+console.log("Devuelve true si los operandos son iguales y del mismo tipo. ");
+console.log("console.log(5 === x)");
+console.log(5 === x);
