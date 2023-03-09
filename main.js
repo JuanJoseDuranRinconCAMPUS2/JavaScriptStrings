@@ -7,8 +7,8 @@ num3 = parseInt(prompt("Ingresa tercer numero    "));
 
 console.log("%c¡Operadores Aritmeticos de JavaScript Math!",
            "background:linear-gradient(#000, #555); color:#D4AF37; padding: 5px 10px;");
-console.log("%c¡Math.min()!",
+console.log("%c¡Math.pow()!",
 "background:linear-gradient(#000, #555); color:#D4AF37; padding: 5px 10px;");
-console.log("La función Math.min() devuelve el menor de cero o más números.");
-console.log("console.log(Math.min(num1, num2 , num3))");
-console.log(Math.min(num1, num2 , num3));
+console.log("La función Math.pow() devuelve la base elevada al exponente , esto es, baseexponente.");
+console.log("console.log(Math.pow(num1, num2))");
+console.log(Math.pow(num1, num2));
