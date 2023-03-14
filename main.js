@@ -1,17 +1,16 @@
 console.log("%c¡ Funciones y Parametros!",
             "background:linear-gradient(#000, #FF8000); color:#fff; padding: 5px 10px;");
-let product1=prompt("Ingresa el producto1");
-    num1 = parseInt(prompt("Ingresa un numero    "));
-let product2=prompt("Ingresa el producto2");
-    num2 = parseInt(prompt("Ingresa segundo numero    "));
-let product3=prompt("Ingresa el producto3")
-    num3 = parseInt(prompt("Ingresa tercer numero    "));
 
-const array = ([[product1, num1],[product2, num2],[product3, num3]]);
-console.log("%c¡Object.fromEntries()!",
+
+console.log("%c¡FormData([form])!",
 "background:linear-gradient(#000, #555); color:#D4AF37; padding: 5px 10px;");
-console.log("El método Object.fromEntries() transforma una lista de pares con [clave-valor] en un objeto. toma una lista de pares con clave-valor y devuelve un nuevo objeto cuyas propiedades son dadas por éstas entradas.");
-console.log(array);
-const obj = Object.fromEntries(array);
-console.log("const obj = Object.fromEntries(array);");
-console.log(obj);
+console.log("Los objetos FormData le permiten compilar un conjunto de pares clave/valor para enviar mediante XMLHttpRequest. Están destinados principalmente para el envío de los datos del formulario, pero se pueden utilizar de forma independiente con el fin de transmitir los datos tecleados. ");
+
+console.log("Ahora un ejemplo de FormData y su organizacion respectiva")
+let formData = new FormData();
+formData.append('Valor1', '456343');
+formData.append('Valor2', '213434');
+
+for(let [name, value] of formData) {
+  alert(`${name} = ${value}`);
+}
