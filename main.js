@@ -2,26 +2,23 @@ console.log("%c¡ Funciones y Parametros!",
             "background:linear-gradient(#000, #FF8000); color:#fff; padding: 5px 10px;");
 
 
-console.log("%c¡Creación de funciones!",
+console.log("%c¡Funciones por declaración!",
 "background:linear-gradient(#000, #555); color:#D4AF37; padding: 5px 10px;");
-console.log("Hay varias formas de crear funciones en Javascript: por declaración (la m;ás usada por principiantes), por expresión (la más habitual en programadores con experiencia) o mediante constructor de objeto (no recomendada): Constructor 	Descripción");
+console.log("obablemente, la forma más popular de estas tres, y a la que estaremos acostumbrados si venimos de otros lenguajes de programación, es la primera, a la creación de funciones por declaración. Esta forma permite declarar una función que existirá a lo largo de todo el código:");
 
-console.log("function nombre(p1, p2...) { }(Crea una función mediante declaración.)");
-
-function ejemplo(){
-  console.log("Esto es una funcion")
+function imprimir(){
+  console.log("SISTEMA DE FACTURACION")
+  console.log("----------------------")
+  console.log("Precio: 243452")
+  console.log("cantidad: 1")
+  console.log("Total: 243452")
 }
 
-ejemplo()
-
-console.log("var nombre = function(p1, p2...) { } (Crea una función mediante expresión.)");
-
-var ejemplo = function(){
-  console.log("Soy una funcion dentro de una variable")
-}
-
-console.log(ejemplo());
-
-console.log(" new Function(p1, p2..., code); (Crea una función mediante un constructor de objeto.)")
-
-new function(){console.log("Soy un metodo de funcion muy poco eficiente")};
+console.log(`function imprimir(){
+  console.log("SISTEMA DE FACTURACION")
+  console.log("----------------------")
+  console.log("Precio: 243452")
+  console.log("cantidad: 1")
+  console.log("Total: 243452")
+}`);
+imprimir()
