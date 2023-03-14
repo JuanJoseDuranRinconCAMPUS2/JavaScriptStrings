@@ -2,15 +2,26 @@ console.log("%c¡ Funciones y Parametros!",
             "background:linear-gradient(#000, #FF8000); color:#fff; padding: 5px 10px;");
 
 
-console.log("%c¡FormData([form])!",
+console.log("%c¡Creación de funciones!",
 "background:linear-gradient(#000, #555); color:#D4AF37; padding: 5px 10px;");
-console.log("Los objetos FormData le permiten compilar un conjunto de pares clave/valor para enviar mediante XMLHttpRequest. Están destinados principalmente para el envío de los datos del formulario, pero se pueden utilizar de forma independiente con el fin de transmitir los datos tecleados. ");
+console.log("Hay varias formas de crear funciones en Javascript: por declaración (la m;ás usada por principiantes), por expresión (la más habitual en programadores con experiencia) o mediante constructor de objeto (no recomendada): Constructor 	Descripción");
 
-console.log("Ahora un ejemplo de FormData y su organizacion respectiva")
-let formData = new FormData();
-formData.append('Valor1', '456343');
-formData.append('Valor2', '213434');
+console.log("function nombre(p1, p2...) { }(Crea una función mediante declaración.)");
 
-for(let [name, value] of formData) {
-  alert(`${name} = ${value}`);
+function ejemplo(){
+  console.log("Esto es una funcion")
 }
+
+ejemplo()
+
+console.log("var nombre = function(p1, p2...) { } (Crea una función mediante expresión.)");
+
+var ejemplo = function(){
+  console.log("Soy una funcion dentro de una variable")
+}
+
+console.log(ejemplo());
+
+console.log(" new Function(p1, p2..., code); (Crea una función mediante un constructor de objeto.)")
+
+new function(){console.log("Soy un metodo de funcion muy poco eficiente")};
