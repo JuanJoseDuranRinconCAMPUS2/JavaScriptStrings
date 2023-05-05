@@ -1,57 +1,34 @@
-console.log("%c¡ Callbacks y Promise!",
+console.log("%c¡ WebComponents!",
   "background:linear-gradient(#000, #FF8000); color:#fff; padding: 5px 10px;");
 
 
-console.log("%c¡Callbacks!",
+console.log("%c¡Atributos!",
 "background:linear-gradient(#000, #555); color:#D4AF37; padding: 5px 10px;");
-console.log("En esencia, una promesa es un objeto que representa el resultado eventual de una operación asíncrona, y que puede estar en uno de tres estados: pendiente (cuando la operación aún no ha terminado), cumplido (cuando la operación se ha completado satisfactoriamente) o rechazado (cuando la operación ha fallado por alguna razón).");
-console.log("ahora un ejemplo")
-console.log(`
-  
-let p2 = (e)=>{
-  new Promise((resolver, reject)=>{
-    let mybody = document.querySelector("#prueba");
-    setTimeout(() => {
-      resolver(mybody.insertAdjacentHTML("beforebegin", "
-      <h1>Hola soy un texto generado con callbacks y promise</h1>
-    "));
-    }, 5000);
-   })
+console.log("Por norma general, los atributos de nuestro custom element se utilizarán para pasar información desde el exterior al propio componente. Esta información puede ser de tipo textual  o simplemente no tener valor  y existir sólo para indicar alguna característica booleana de verdadero o falso.");
+console.log("ejemplos")
+
+console.log(".hasAttributes()");
+let mymodale = document.querySelector(".unmodal");
+if (mymodale.hasAttribute("class")) {
+  console.log("El modal tiene el atributo class");
+} else {
+  console.log("El modal no tiene el atributo class");
 }
-console.log("Haz click para ver la magia ;3")
+console.log(".getAttributeNames()");
+console.log(mymodale.getAttributeNames());
+console.log(".getAttribute()");
+console.log(mymodale.getAttribute("name"));
+console.log(".removeAttribute()");
+console.log("mymodale..removeAttribute(`name`)");
+mymodale.removeAttribute("name");
+console.log(mymodale.getAttributeNames());
+setTimeout(() => {
+  console.log(".setAttribute(`name`,`value`)");
+  mymodale.setAttribute("name","modalbonito")
+  console.log(mymodale.getAttributeNames());
+}, 100);
+console.log(".toggleAttribute(`name`,force)");
+mymodale.toggleAttribute("class");
 
-`
- 
-)
 
-let p1 = (e)=>{
-    let count = 5;
-  const intervalId = setInterval(() => {
-    let mybody = document.querySelector("#prueba");
-      mybody.insertAdjacentHTML("beforebegin", `
-      <h1>Callback funcionando, espera ${count}sg</h1>
-    `)
-    count--;
-    if (count <= 0) {
-      clearInterval(intervalId);
-      mybody.insertAdjacentHTML("beforebegin", `
-      <h1>Callback terminado :3</h1>
-    `)
-    }
-  }, 1000);
-}
-
-let p2 = (e)=>{
-  new Promise((resolver, reject)=>{
-    let mybody = document.querySelector("#prueba");
-    setTimeout(() => {
-      resolver(mybody.insertAdjacentHTML("beforebegin", `
-      <h1>Hola soy un texto generado con callbacks y promise</h1>
-    `));
-    }, 5000);
-   })
-}
-
-addEventListener("click", p1);
-addEventListener("click", p2);
-
+import mymodal from "./components/my-modal.js";
