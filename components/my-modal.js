@@ -9,6 +9,12 @@ export default class mymodal extends HTMLElement{
         this.attachShadow({mode:"open"});
         console.log("etiqueta modal creada");
     }
+    static get observedAttributes() {
+        return ['atributo-cambiante'];
+      }
+    attributeChangedCallback(attributeName, oldValue, newValue) {
+        console.log(`El atributo ${attributeName} ha cambiado de ${oldValue} a ${newValue}`);
+    }
     hadledEvent(e){
         console.log(e);
         (e.type === "click") ? this.sendMessage(e) : console.log("error en la line 423");
@@ -35,6 +41,8 @@ export default class mymodal extends HTMLElement{
             this.mybuttom.addEventListener("click", this.hadledEvent.bind(this));
             this.closeModal = this.shadowRoot.querySelector('.modal__close');
             this.closeModal.addEventListener("click", this.ClosedEvent.bind(this));
+            this.mymodals = document.querySelector(".unmodal")
+            this.mymodals.setAttribute('atributo-cambiante', 'Nuevo valor');
         })
     }
 }

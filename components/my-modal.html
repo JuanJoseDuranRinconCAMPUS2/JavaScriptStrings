@@ -1,44 +1,15 @@
 <section class="modal ">
     <div class="modal__container">
         <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--lYkOdwfY--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/t2fcfqa7fxh6z927fmb1.png" class="modal__img">
-        <h4 class="modal__title">Atributos de los WebComponents</h2>
+        <h4 class="modal__title">Observación de atributos</h2>
         <p class="modal__paragraph">
             &#10094;my-modal value="5" is-enabled name="modal" class="unmodal"&#10095; &#10094;&#47;my-modal&#10095;
         </p>
         <p class="modal__paragraph">
-            El atributo <strong> value </strong> contiene un valor  15, sin embargo, los atributos siempre se reciben como .
-            El atributo <strong> is-enabled</strong> no especifíca valor, técnicamente es un  de tamaño 0, que se considera
-        </p>
-        <h4 class="modal__title">Aceder a los atributos</h4>
-        <p class="modal__paragraph">
-            <strong>.hasAttributes("atributo")</strong><br>
-            muestra si el elemento tiene atributos o no.<br>
-            ejemplo: en consola
-        </p>
-        <p class="modal__paragraph">
-            <strong>.getAttributeNames()</strong><br>
-           Devuelve un array con todos los atrivbutos de la etiqueta<br>
-            ejemplo: en consola
-        </p>
-        <p class="modal__paragraph">
-            <strong>.getAttribute("name")</strong><br>
-           Devuelve el valor del atributo en cuestion o null si no existe.<br>
-            ejemplo: en consola
-        </p>
-        <p class="modal__paragraph">
-            <strong>.removeAttribute("name")</strong><br>
-           Elimina el atributo en cuestion<br>
-            ejemplo: en consola
-        </p>
-        <p class="modal__paragraph">
-            <strong>.setAttribute("name","value")</strong><br>
-           asigna al atributo seleccionado el valor en cuestion<br>
-            ejemplo: en consola
-        </p>
-        <p class="modal__paragraph">
-            <strong>.toggleAttribute(name,force)</strong><br>
-            se utiliza para agregar o eliminar un atributo en un elemento HTML, dependiendo del valor de force (true o false)<br>
-            ejemplo: en consola
+            En WebComponents podemos utilizar el getter estático observedAttributes(), que deberá devolver un  con los 
+            nombres de los atributos que queremos observar. De esta forma, los atributos que estén siendo observados, 
+            cada vez que cambien, se disparará un método especial llamado attributeChangedCallback(), donde podemos 
+            implementar nuestra lógica.
         </p>
         <a href="#" class="modal__close">Cerrar Modal</a>
     </div>
